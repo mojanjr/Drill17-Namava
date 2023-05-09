@@ -56,7 +56,7 @@
             ]
             var starsList = "<ul>";
                 for(var i = 0; i < list.length; i++) {
-                    starsList += "<li>" + "<a href=" + list[i].link + " target=_blank" + ">" + "<img src=" + list[i].imageUrl + "/>" + "<h3>" + list[i].name + "<h3/>" + "</a>"+"</li>";
+                    starsList += "<li>" + "<a href=" + list[i].link + " target=_blank" + "/>" + "<img src=" + list[i].imageUrl + "/>" + "<h3>" + list[i].name + "<h3/>" + "</a>" + "</li>";
                 }
                 starsList += "</ul>";
                 document.getElementById("the-stars1").innerHTML = starsList;
