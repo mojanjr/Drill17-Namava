@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>نماوا</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css//session17.drill.css"/>
+    </head>
+    <body>
+        <div id="the-stars1">
+            <h1>ستارگان</h1>
+        </div>
+        <div id="the-stars2">
+            <h1>ستارگان</h1>
+        </div>
+
+        <script>
+            var list = [
+                {
+                imageUrl: "https://static.namava.ir/Content/Upload/Images/e10c2fa2-8131-4b2f-b35c-6348b0ebcc1c.jpg?anchor=middlecenter&crop=auto&scale=both&w=140&h=140",
+                name: "آنا د آرماس",
+                link: "https://www.namava.ir/person-13941-%D8%A2%D9%86%D8%A7_%D8%AF_%D8%A2%D8%B1%D9%85%D8%A7%D8%B3"
+                },
+                {
+                imageUrl: "https://static.namava.ir/Content/Upload/Images/7d9eb816-674f-4c33-bb9c-a1aefd63ba07.jpg?anchor=middlecenter&crop=auto&scale=both&w=140&h=140",
+                name: "کریس ایوانز",
+                link: "https://www.namava.ir/person-588-%DA%A9%D8%B1%DB%8C%D8%B3_%D8%A7%DB%8C%D9%88%D8%A7%D9%86%D8%B2"
+                },
+                {
+                imageUrl: "https://static.namava.ir/Content/Upload/Images/33ef2e87-ec14-43af-bb99-1ae2c2b7d6fb.jpg?anchor=middlecenter&crop=auto&scale=both&w=140&h=140",
+                name: "کیت بلانشت",
+                link: "https://www.namava.ir/person-990-%DA%A9%DB%8C%D8%AA_%D8%A8%D9%84%D8%A7%D9%86%D8%B4%D8%AA"
+                },
+                {
+                imageUrl: "https://static.namava.ir/Content/Upload/Images/710f6070-1be1-4ff0-9856-cfc2070d4c2b.jpg?anchor=middlecenter&crop=auto&scale=both&w=140&h=140",
+                name: "کالین فرل",
+                link: "https://www.namava.ir/person-1278-%DA%A9%D8%A7%D9%84%DB%8C%D9%86_%D9%81%D8%B1%D9%84"
+                },
+                {
+                imageUrl: "https://static.namava.ir/Content/Upload/Images/dc8f18d1-20bd-476e-b0da-715d5d9ebd3a.jpg?anchor=middlecenter&crop=auto&scale=both&w=140&h=140",
+                name: "برندن فریز",
+                link: "https://www.namava.ir/person-1134-%D8%A8%D8%B1%D9%86%D8%AF%D9%86_%D9%81%D8%B1%DB%8C%D8%B2%D8%B1"
+                },
+                {
+                imageUrl: "https://static.namava.ir/Content/Upload/Images/4fa33014-3fb2-4b8b-bb55-d77590fbb83c.jpg?anchor=middlecenter&crop=auto&scale=both&w=140&h=140",
+                name: "میشل یئو",
+                link: "https://www.namava.ir/person-10589-%D9%85%DB%8C%D8%B4%D9%84_%DB%8C%D8%A6%D9%88"
+                },
+                {
+                imageUrl: "https://static.namava.ir/Content/Upload/Images/006e6d8d-a6c6-491d-95ed-17296835d93f.jpg?anchor=middlecenter&crop=auto&scale=both&w=140&h=140",
+                name: "کی هوی کوان",
+                link: "https://www.namava.ir/person-92089-%DA%A9%DB%8C_%D9%87%D9%88%DB%8C_%DA%A9%D9%88%D8%A7%D9%86"
+                }
+            ]
+            var starsList = "<ul>";
+                for(var i = 0; i < list.length; i++) {
+                    starsList += "<li>" + "<a href=" + list[i].link + " target=_blank" + ">" + "<img src=" + list[i].imageUrl + "/>" + "<h3>" + list[i].name + "<h3/>" + "</a>"+"</li>";
+                }
+                starsList += "</ul>";
+                document.getElementById("the-stars1").innerHTML = starsList;
+
+
+            var ul = document.createElement("ul");
+            document.getElementById("the-stars2").appendChild(ul);        
+            for(var i = 0; i < list.length; i++) {   
+                var li = document.createElement("li");
+                var link = document.createElement("a");
+                var image = document.createElement("img");
+                var starsName = document.createElement("h3");         
+                starsName.innerHTML = list[i].name;
+                image.setAttribute("src", list[i].imageUrl);
+                link.setAttribute("href", list[i].link);
+                link.setAttribute("target", list[i].link);
+                li.appendChild(link);
+                link.appendChild(image);
+                link.appendChild(starsName);
+                ul.appendChild(li);
+            }
+        </script>
+    </body>
+</html>
