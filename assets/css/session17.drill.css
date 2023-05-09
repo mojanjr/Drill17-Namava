@@ -36,7 +36,7 @@ a {
     color: #fff;
 }
 div {
-    margin: 70px 20px;
+    margin: 80px 20px;
 }
 h1 {
     font-weight: 800; 
@@ -46,7 +46,7 @@ h3 {
 }
 ul {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     text-align: center;
 }
 ul li {

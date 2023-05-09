@@ -3,16 +3,19 @@
         <title>نماوا</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css//session17.drill.css"/>
+        
     </head>
     <body>
         <div id="the-stars1">
-            <h1>ستارگان</h1>
+            <h1 id="title">ستارگان</h1>
         </div>
         <div id="the-stars2">
-            <h1>ستارگان</h1>
+            <h1 id="title">ستارگان</h1>
         </div>
 
         <script>
+            var title = document.createElement("h1");
+            document.getElementById("the-stars1").appendChild(title);
             var list = [
                 {
                 imageUrl: "https://static.namava.ir/Content/Upload/Images/e10c2fa2-8131-4b2f-b35c-6348b0ebcc1c.jpg?anchor=middlecenter&crop=auto&scale=both&w=140&h=140",
@@ -56,7 +59,6 @@
                 }
                 starsList += "</ul>";
                 document.getElementById("the-stars1").innerHTML = starsList;
-
 
             var ul = document.createElement("ul");
             document.getElementById("the-stars2").appendChild(ul);        
